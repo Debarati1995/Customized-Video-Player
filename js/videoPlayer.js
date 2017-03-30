@@ -258,10 +258,10 @@ function mouseMoveToDisplayControlBar() {
 	if ($('.buttonbar').attr('class') === 'container buttonbar fullscreenControl') {
 
 		$('.fullscreenControl').css('opacity', '1').on('mouseleave', function () {
-			$('.fullscreenControl').css('opacity', '0')
+			$('.fullscreenControl').css('opacity', '0');
 		});
 	}
-};
+}
 
 
 $(document).keydown(function (event) {
@@ -308,7 +308,7 @@ function exitHandler() {
 function handleTouchStart(event) {
 	xDown = event.touches[0].clientX;
 	yDown = event.touches[0].clientY;
-};
+}
 
 //function to forward or backward the video with swipe
 function handleTouchMove(event) {

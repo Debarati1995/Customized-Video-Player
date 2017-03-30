@@ -14,7 +14,7 @@ function PageRender(idx){
         $("#videoDesc").html(tocData[num].videoName);
       }
       disableButton();
-};
+}
 
 //getting the next page index
 function next(){
@@ -28,7 +28,7 @@ function next(){
   			buttonPlay.classList.add('glyphicon-play');
      });
 
-};
+}
 //getting the previous page index
 function prev(){
     $("#prev").on('click',function(){
@@ -41,7 +41,7 @@ function prev(){
   			buttonPlay.classList.add('glyphicon-play');
      });
 
-};
+}
 //making next and prev button disabled
 function disableButton(){
     if(currentPage == 1){
@@ -55,7 +55,7 @@ function disableButton(){
         $('#next').removeAttr('disabled');
           $('#prev').removeAttr("disabled");
     }
-};
+}
 
 
 var tocData = [];
